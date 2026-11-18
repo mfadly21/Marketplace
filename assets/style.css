@@ -1,0 +1,35 @@
+body { background-color: #f6f8f5; }
+
+.kartu-produk { transition: transform .15s ease, box-shadow .15s ease; }
+.kartu-produk:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.12) !important; }
+
+.gambar-produk {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background: #e9efe6;
+}
+
+.gambar-kosong {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #dcefd9, #c4e0c0);
+    color: #5c8a58;
+    font-size: 3rem;
+}
+
+.gambar-detail { width: 100%; max-height: 420px; object-fit: cover; border-radius: .5rem; }
+.gambar-kosong.besar { aspect-ratio: 4 / 3; border-radius: .5rem; font-size: 6rem; }
+
+.thumb-keranjang { width: 64px; height: 64px; object-fit: cover; border-radius: .4rem; background: #e9efe6; }
+.thumb-kosong {
+    width: 64px; height: 64px; border-radius: .4rem;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: #dcefd9; color: #5c8a58; font-size: 1.6rem;
+}
+
+.harga { color: #198754; font-weight: 700; }
+.input-qty { max-width: 90px; }
